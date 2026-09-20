@@ -1,10 +1,10 @@
 {
   "name": "@kubohiroya/turbowarp-3d-scene-dsl",
-  "version": "0.1.0",
-  "description": "3D/AR scene DSL validation, normalization, and TurboWarp extension call-plan utilities.",
+  "version": "0.2.0",
+  "description": "Retired. Merged into @kubohiroya/turbowarp-scene-graph.",
   "author": "Hiroya Kubo <hiroya@cuc.ac.jp>",
   "license": "MPL-2.0",
-  "homepage": "https://github.com/kubohiroya/turbowarp-3d-scene-dsl#readme",
+  "homepage": "https://github.com/kubohiroya/turbowarp-scene-graph#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kubohiroya/turbowarp-3d-scene-dsl.git"
@@ -13,55 +13,14 @@
     "url": "https://github.com/kubohiroya/turbowarp-3d-scene-dsl/issues"
   },
   "keywords": [
-    "3d",
-    "scene-graph",
-    "yaml",
-    "tm",
-    "typescript"
+    "deprecated"
   ],
-  "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
-    }
-  },
   "files": [
-    "dist/",
-    "docs/",
-    "schemas/",
-    "scripts/",
-    "src/",
     "LICENSE",
     "README.md",
     "README.ja.md"
   ],
-  "packageManager": "pnpm@11.11.0",
   "engines": {
     "node": ">=22"
-  },
-  "scripts": {
-    "typecheck": "tsc --noEmit",
-    "test": "vitest run tests",
-    "build": "tsc --project tsconfig.build.json",
-    "sb3:build": "node scripts/sb3/build.mjs --yes",
-    "sb3:check": "node scripts/sb3/release-workflow.mjs check",
-    "release:sb3:update": "node scripts/sb3/release-workflow.mjs update",
-    "release:sb3:check": "node scripts/sb3/release-workflow.mjs check",
-    "check": "pnpm run typecheck && pnpm run test && pnpm run sb3:check"
-  },
-  "dependencies": {
-    "@kubohiroya/turbowarp-ar": "0.1.0",
-    "@kubohiroya/turbowarp-sb3-source-builder": "0.1.0",
-    "@kubohiroya/turbowarp-scene-graph": "0.1.0",
-    "yaml": "^2.9.0"
-  },
-  "devDependencies": {
-    "@kubohiroya/sb3-toolchain": "0.10.0",
-    "@types/node": "^24.13.3",
-    "typescript": "^5.9.3",
-    "vitest": "^4.1.10"
   }
 }
