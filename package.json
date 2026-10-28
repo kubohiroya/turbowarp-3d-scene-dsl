@@ -2,7 +2,11 @@
   "name": "@kubohiroya/turbowarp-3d-scene-dsl",
   "version": "0.2.0",
   "description": "Retired. Merged into @kubohiroya/turbowarp-scene-graph.",
-  "author": "Hiroya Kubo <hiroya@cuc.ac.jp>",
+  "author": {
+    "name": "Hiroya Kubo",
+    "email": "hiroya@cuc.ac.jp",
+    "url": "https://github.com/kubohiroya"
+  },
   "license": "MPL-2.0",
   "homepage": "https://github.com/kubohiroya/turbowarp-scene-graph#readme",
   "repository": {
